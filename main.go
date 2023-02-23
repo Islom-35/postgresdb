@@ -13,7 +13,7 @@ type Students struct {
 	Name string
 }
 
-// salom
+// salom men code qoshdim
 type Book struct {
 	ID          int
 	Name        string
