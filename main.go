@@ -27,6 +27,7 @@ func main() {
 
 	var a, b int
 	print("Enter: ")
+	
 	fmt.Scan(&a, &b)
 	fmt.Println(post.Add(a, b))
 	// connect := fmt.Sprintf("host=%s port=%d user=%s "+
