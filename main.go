@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"lesson/connectionDb/post"
+	"lesson/connectionDb/add"
+	"lesson/connectionDb/multi"
 
 	_ "github.com/lib/pq"
 )
@@ -12,6 +13,7 @@ type Students struct {
 	Name string
 }
 
+// salom men code qoshdim
 type Book struct {
 	ID          int
 	Name        string
@@ -27,8 +29,10 @@ func main() {
 
 	var a, b int
 	print("Enter: ")
+
 	fmt.Scan(&a, &b)
-	fmt.Println(post.Add(a, b))
+	fmt.Println("yig'indi: ", add.Add(a, b))
+	fmt.Println("ko'paytma: ", multi.Cop(a, b))
 	// connect := fmt.Sprintf("host=%s port=%d user=%s "+
 	// 	"password=%s dbname=%s sslmode=disable",
 	// 	"localhost", 5432, "postgres", "1234", "golang")
